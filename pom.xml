@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>ISPW-Project</artifactId>
+    <groupId>com.questtable</groupId>
+    <artifactId>QuestTable</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -15,7 +15,7 @@
         <jacoco.version>0.8.12</jacoco.version>
         <protobuf.version>3.25.5</protobuf.version>
         <sonar.organization>matteo-marcoccia</sonar.organization>
-        <sonar.projectKey>Matteo-Marcoccia_ISPW-Project</sonar.projectKey>
+        <sonar.projectKey>Matteo-Marcoccia_QuestTable</sonar.projectKey>
         <sonar.coverage.jacoco.xmlReportPaths>target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
         <sonar.coverage.exclusions>**/AvvioJavaFX.java,**/view/**,**/dao/mysql/**,**/dao/file_system/**</sonar.coverage.exclusions>
         <sonar.cpd.exclusions>**/dao/*/*DAO.java,**/dao/*/*DAOFactory.java</sonar.cpd.exclusions>
