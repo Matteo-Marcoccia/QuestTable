@@ -1,0 +1,29 @@
+QuestTable - Windows desktop demo
+
+1. Extract the entire ZIP archive to a folder.
+2. Open QuestTable.exe inside the QuestTable folder.
+
+Java and all application dependencies are included. No installation,
+Maven, database, or internet connection is required for the demo.
+Keep the app and runtime folders next to the executable.
+
+The main launcher opens the graphical interface with sample data.
+Demo changes are reset when the application closes. The interface is in Italian.
+
+Sample accounts:
+  Customer: matteo / 1234
+  Customer: erik / 1234
+  Manager:  admin / admin
+
+Try the full workflow:
+  Log in as a customer, choose a table and seats, and type paga when prompted.
+  Log out, log in as admin, and confirm the pending booking.
+  Log back in as the customer to see the booking status and loyalty points.
+  Keep the app open while switching accounts. Payments are simulated.
+
+QuestTable-Console.exe opens the original startup menus, where you can
+choose Demo / CSV / MySQL and JavaFX / CLI. MySQL requires separate setup;
+see the repository README. The primary QuestTable.exe needs no such setup.
+
+Academic project by Matteo Marcoccia, University of Rome Tor Vergata.
+Source: https://github.com/Matteo-Marcoccia/QuestTable
