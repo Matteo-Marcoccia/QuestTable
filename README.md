@@ -3,11 +3,15 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Matteo-Marcoccia_QuestTable&metric=alert_status)](https://sonarcloud.io/project/overview?id=Matteo-Marcoccia_QuestTable)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Matteo-Marcoccia_QuestTable&metric=ncloc)](https://sonarcloud.io/project/overview?id=Matteo-Marcoccia_QuestTable)
 
+**[⬇️ Download the Windows demo](https://github.com/Matteo-Marcoccia/QuestTable/releases/tag/v1.0.0)**
+
+Download the ZIP from the release assets, extract it, and open `QuestTable.exe`. **Java is included — no Maven or database setup required.** Windows x64.
+
 A Java application for reserving seats at a **Board Game Café**, with a JavaFX desktop interface and a command-line interface (CLI).
 
 Developed by **Matteo Marcoccia** for the **ISPW course at the University of Rome Tor Vergata**, academic year **2025–2026**. The project demonstrates separation of presentation and business logic, interchangeable persistence implementations, and automated testing through the **“Prenota posto al tavolo” (Reserve a seat at a table)** use case.
 
-## Implemented features
+## 📌 Implemented features
 
 - **Customer and manager access:** login, logout, and operations restricted by user role.
 - **Table search:** browse available game sessions and filter by game title and day of the week.
@@ -34,7 +38,7 @@ This academic prototype implements the seat reservation use case. The broader sp
 
 Game sessions use a **day of the week and a time slot**, rather than a specific calendar date. The booking date records when the request was created.
 
-## Architecture and design patterns
+## 🏗️ Architecture and design patterns
 
 The code separates the responsibilities of **Boundary, Control, and Entity (BCE)**:
 
@@ -61,7 +65,7 @@ The persistence mode is selected at startup:
 | File system | CSV files in `data/file_system/` | Missing files are initialized automatically with sample users and tables; the booking archive starts empty |
 | MySQL | Relational database | Requires MySQL and the supplied initialization script |
 
-## Technology stack
+## 🛠️ Technology stack
 
 - Java 21
 - JavaFX / OpenJFX 21 and FXML
@@ -70,7 +74,7 @@ The persistence mode is selected at startup:
 - JUnit 5 and JaCoCo
 - GitHub Actions for continuous integration and SonarCloud for static analysis
 
-## Run the Windows demo without installing Java
+## 🖥️ Run the Windows demo without installing Java
 
 The portable Windows x64 package includes Java and the application dependencies. To use a built package:
 
@@ -94,7 +98,7 @@ Set `JAVA_HOME` to the JDK 21 directory. The script runs verification, collects 
 
 The manually triggered **Package Windows demo** GitHub Actions workflow also builds the ZIP and saves it as a workflow artifact. For public distribution, attach the ZIP and checksum to a GitHub Release; the workflow does not publish a release automatically.
 
-## Getting started from source
+## 🚀 Getting started from source
 
 ### Requirements
 
@@ -141,7 +145,7 @@ To try the full workflow, book seats as a customer, log out, log in as the manag
 
 The SQL script populates sample data and overwrites matching sample records when rerun; use it to initialize a demonstration database.
 
-## Tests and continuous integration
+## 🧪 Tests and continuous integration
 
 Run the unit tests:
 
@@ -161,6 +165,6 @@ The test suite covers bean validation, login and session checks, reservation con
 
 GitHub Actions runs verification and SonarCloud analysis on pushes to `main` and on pull request creation, updates, and reopening. The workflow does not deploy the application.
 
-## Project documentation
+## 📄 Project documentation
 
 The [project report (PDF)](docs/QuestTable.pdf) contains the academic specification, storyboards, UML diagrams, and testing overview. Some sections describe the broader planned system or earlier design iterations; the implemented scope and workflow are described above.
